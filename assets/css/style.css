@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+:root {
+    --color-bottom: rgba(255, 255, 255, 0.3);
+    --color-font: #FFFFFF;
+    --color-primary : #101013;
+    --color-secundary : #171E27;
+    --color-third: rgba(197, 197, 197, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+    background-color: var(--color-primary);
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+    color: var(--color-font);
+}
+
+a {
+    color: var(--color-font);
+    text-decoration: none;
+    /* font-size: 1.6rem; */
+}
+
+/* ---------- HEADER ------------*/
+
+.header {
+    background-image: url('../img/baneer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    padding-top: 5rem;
+}
+
+.header-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 8rem;
+}
+
+.header-logo {
+    height: 8rem;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-nav {
+    height: 4rem;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.header-nav li {
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    list-style: none;
+    padding-top: 1rem;
+}
+.header-nav li a {
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.header-nav li a:hover {
+    background-color: var(--color-secundary);
+}
+
+
+.header-session {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 4.5rem;
+    justify-content: space-evenly;
+}
+
+
+.bottom {
+    background-color: var(--color-bottom);
+    border-radius: 2.5rem;
+    margin-right: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 10rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.bottom:hover{
+    background-color: var(--color-secundary);
+    color: white;
+}
+
+.header-profile {
+    height: 4.7rem;
+    width: 4.7rem;
+}
+
+.header-photo {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* --------- MAIN ----------- */
+.main {
+    margin-top: 2rem;
+}
+
+/* Contenido banner */
+.welcome {
+    position: absolute;
+    top: 21rem;
+    left: 30vw;
+    text-align: center;
+}
+
+.welcome-text {
+    margin-bottom: 7rem;
+}
+
+.welcome-text h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-text h3 {
+    font-size: 1.8rem;
+}
+
+
+/* buscador */
+.search-form {
+    border-radius: 3rem;
+    box-shadow: 1px 1px 6px 0.1px black;
+
+}
+
+.search-form select,  
+.search-form input,  
+.search-form select  {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-font);
+    height: 4rem;
+    text-align: left;
+    text-align: center;
+    border: none;
+    background-color: var(--color-secundary);
+}
+
+.welcome-search select {
+    background-image: url('../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    width: 15.2rem;
+    border-bottom-left-radius: 3rem;
+    border-top-left-radius: 3rem;
+    appearance: none;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.welcome-search input[type="search"] {
+    background-color: var(--color-third);
+    width: 30rem;
+}
+
+.welcome-search input[type="search"]:focus-visible {
+    outline: none;
+    border: .1rem solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.welcome-search input[type="submit"] {
+    width: 12.4rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.welcome-search input[type="submit"]:focus {
+    box-shadow: 1px 1px 6px 0.1px black;
+}
+
+/*Localizaciones populares*/
+.main {
+    margin: 5rem 8rem;
+}
+
+.main-location {
+    margin-bottom: 4rem;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.location-content {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.location-city {
+    background-color: #171E27;
+    width: 20rem;
+    height: 7.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 6px 0.1px black;
+}
+
+.location-city figure {
+    width: 8rem;
+    height: 100%;
+    margin-right: 1.5rem;
+}
+
+.location-city img {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    height: 100%;
+    width: 100%;
+}
+
+.location-text__city {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.location-text__cantidad {
+    font-size: 1.1rem;
+}
+
+.location-city:hover {
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+/*Recomendados*/
+
+.main-recommend,
+.main-popular {
+
+    margin-bottom: 4rem;
+}
+
+.recommend-container,
+.popular-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-all {
+    margin: 1rem 1.5rem;
+}
+
+/*mostrar los inmuebles a arrendar*/
+
+.product-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-items {
+    width: 28rem;
+    height: 25rem;
+    background-color: #171E27;
+    border-radius: 3.2rem;
+    box-shadow: 1px 1px 6px 0.1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img {
+    width: 100%;
+    height: 13.5rem;
+}
+
+.product-img img {
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+    width: 28rem;
+}
+
+.product-text p {
+    margin-top: 0.5rem;
+}
+.product-text {
+    margin: 1rem 2rem;
+}
+
+.product-text .price {
+    font-size: 1.6rem;
+}
+
+.text-content  {
+    margin-bottom: 1rem;
+}
+
+.product-content p .icon-content {
+    margin-right: 1rem;
+}
+
+.product-content p .icon-content  span{
+    margin-left: 0.3rem;
+}
+
+/* populares */
+
+.text-popular {
+    margin: 2rem 1rem;
+}
+
+.footer {
+    padding-top: 2rem;
+}
+
+
+/* banner afitrion */
+
+.main-banner {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secundary);
+    border-radius: 2rem;
+}
+
+.banner-img {
+    width: 50vw;
+}
+
+.banner-img img {
+    width: 100%;
+    border-top-left-radius: 3.2rem;
+    border-bottom-left-radius: 3.2rem;
+}
+
+.banner-register {
+    text-align: center;
+    width: 50vw;
+}
+
+.banner-text {
+    margin: 0 10rem 1rem;
+}
+
+.banner-text p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.banner-bottom {
+    margin: 0 auto;
+    height: 4.6rem;
+}
+
+.footer {
+    margin: 4rem 8rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.menu-content {
+    display: flex;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.menu-content li {
+    margin-right: 2.4rem;
+}
+
+.footer-social  {
+    display: flex;
+}
+.footer-social i {
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+.footer-copyright p {
+    text-align: center;
+}
+
+.footer-copyright span {
+    margin-left: 2rem;
+}
